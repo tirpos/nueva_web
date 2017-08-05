@@ -1,0 +1,49 @@
+Producto_new:
+    path: /new
+    defaults: { _controller: "AppBundle:Producto:new"}
+    methods: POST
+
+Producto_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Producto:edit", id:null}
+    methods: POST
+    
+Producto_upload:
+    path: /upload/{id}
+    defaults: { _controller: "AppBundle:Producto:upload", id:null}
+    methods: POST
+    
+Producto_list:
+    path: /list
+    defaults: { _controller: "AppBundle:Producto:list"}
+    methods: GET
+
+Producto_list_admin:
+    path: /listadmin
+    defaults: { _controller: "AppBundle:Producto:listadmin"}
+    methods: GET
+    
+Producto_detail:
+    path: /detail/{id}
+    defaults: { _controller: "AppBundle:Producto:detail", id:null}
+    methods: GET
+    
+Producto_search:
+    path: /search/{search}
+    defaults: { _controller: "AppBundle:Producto:search", search:null}
+    methods: GET
+
+Producto_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Producto:delete", id:null}
+    methods: POST
+
+Producto_ofertas:
+    path: /ofertas
+    defaults: { _controller: "AppBundle:Producto:ofertas"}
+    methods: GET
+
+Producto_recientes:
+    path: /recientes
+    defaults: { _controller: "AppBundle:Producto:recientes"}
+    methods: GET

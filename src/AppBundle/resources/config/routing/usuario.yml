@@ -1,0 +1,19 @@
+Usuario_new:
+    path: /new
+    defaults: { _controller: "AppBundle:Usuario:new"}
+    methods: POST
+
+Usuario_edit:
+    path: /edit
+    defaults: { _controller: "AppBundle:Usuario:edit"}
+    methods: POST
+
+Usuario_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Usuario:delete", id:null}
+    methods: POST
+
+Usuario_list:
+    path: /list
+    defaults: { _controller: "AppBundle:Usuario:list"}
+    methods: GET

@@ -1,0 +1,19 @@
+Linea_new:
+    path: /new/{id}
+    defaults: { _controller: "AppBundle:Lineapack:new",id:null}
+    methods: POST
+
+Linea_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Linea:delete",id:null}
+    methods: POST
+    
+Linea_detail:
+    path: /detail/{id}
+    defaults: { _controller: "AppBundle:Linea:detail",id:null}
+    methods: GET
+
+Linea_indeo:
+    path: /indeo
+    defaults: { _controller: "AppBundle:Linea:indeo"}
+    methods: GET

@@ -1,0 +1,34 @@
+Categoria_new:
+    path: /new
+    defaults: { _controller: "AppBundle:Categoria:new"}
+    methods: POST
+
+Categoria_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Categoria:edit", id:null}
+    methods: POST
+
+Categoria_list:
+    path: /list
+    defaults: { _controller: "AppBundle:Categoria:list"}
+    methods: GET
+
+Categoria_listt:
+    path: /listt
+    defaults: { _controller: "AppBundle:Categoria:listt"}
+    methods: GET
+    
+Categoria_detail:
+    path: /detail/{id}
+    defaults: { _controller: "AppBundle:Categoria:detail",id:null}
+    methods: GET
+    
+Categoria_detail_pack:
+    path: /detailPack/{id}
+    defaults: { _controller: "AppBundle:Categoria:detailPack",id:null}
+    methods: GET
+    
+Categoria_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Categoria:delete", id:null}
+    methods: POST

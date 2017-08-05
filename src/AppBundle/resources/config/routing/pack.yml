@@ -1,0 +1,26 @@
+Pack_new:
+    path: /new
+    defaults: { _controller: "AppBundle:Pack:new"}
+    methods: POST
+    
+Pack_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Pack:edit", id:null}
+    methods: POST
+    
+Pack_upload:
+    path: /upload/{id}
+    defaults: { _controller: "AppBundle:Pack:upload", id:null}
+    methods: POST
+    
+Pack_delete:
+    path: /delete/{id}
+    defaults: { _controller: "AppBundle:Pack:delete", id:null}
+    methods: POST
+
+Pack_list:
+    path: /list
+    defaults: { _controller: "AppBundle:Pack:list"}
+    methods: GET
+
+

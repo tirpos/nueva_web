@@ -1,0 +1,31 @@
+app_default:
+    resource: "@AppBundle/resources/config/routing/default.yml"
+    prefix: / 
+
+app_usuario:
+    resource: "@AppBundle/resources/config/routing/usuario.yml"
+    prefix: /usuario
+    
+app_producto:
+    resource: "@AppBundle/resources/config/routing/producto.yml"
+    prefix: /producto
+    
+app_categoria:
+    resource: "@AppBundle/resources/config/routing/categoria.yml"
+    prefix: /categoria
+    
+app_pack:
+    resource: "@AppBundle/resources/config/routing/pack.yml"
+    prefix: /pack
+
+app_lineapack:
+    resource: "@AppBundle/resources/config/routing/lineapack.yml"
+    prefix: /lineapack
+    
+app_linea:
+    resource: "@AppBundle/resources/config/routing/linea.yml"
+    prefix: /linea
+
+app_reserva:
+    resource: "@AppBundle/resources/config/routing/reserva.yml"
+    prefix: /reserva

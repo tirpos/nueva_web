@@ -1,0 +1,33 @@
+Reserva_new:
+    path: /new
+    defaults: { _controller: "AppBundle:Reserva:new"}
+    methods: POST
+  
+Reserva_upload:
+    path: /upload/{id}
+    defaults: { _controller: "AppBundle:Reserva:upload",id:null}
+    methods: POST
+
+Reserva_edit:
+    path: /edit/{id}
+    defaults: { _controller: "AppBundle:Reserva:edit",id:null}
+    methods: POST
+
+Reserva_list1:
+    path: /list1/{ide}
+    defaults: { _controller: "AppBundle:Reserva:list1",ide:null}
+    methods: GET
+
+Reserva_list4:
+    path: /list4/{id}/{ide}
+    defaults: { _controller: "AppBundle:Reserva:list4",id:null,ide:null}
+    methods: GET
+
+
+
+
+
+
+
+
+

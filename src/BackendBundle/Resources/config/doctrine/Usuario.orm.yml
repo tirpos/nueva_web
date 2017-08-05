@@ -1,0 +1,66 @@
+BackendBundle\Entity\Usuario:
+    type: entity
+    table: usuario
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nombre:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        apellido:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        celular:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        correo:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        role:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        direccion:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        ciudad:
+            type: string
+            nullable: true
+            length: 50
+            options:
+                fixed: false
+        visible:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

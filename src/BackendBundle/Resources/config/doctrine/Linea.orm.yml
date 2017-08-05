@@ -1,0 +1,66 @@
+BackendBundle\Entity\Linea:
+    type: entity
+    table: linea
+    indexes:
+        fk_linea_producto1_idx:
+            columns:
+                - producto_id
+        fk_linea_pack1_idx:
+            columns:
+                - pack_id
+        fk_linea_reserva1_idx:
+            columns:
+                - reserva_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cantidad:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        preciolinea:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: precioLinea
+    manyToOne:
+        pack:
+            targetEntity: Pack
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pack_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        producto:
+            targetEntity: Producto
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                producto_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        reserva:
+            targetEntity: Reserva
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                reserva_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

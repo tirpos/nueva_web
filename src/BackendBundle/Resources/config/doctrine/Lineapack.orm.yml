@@ -1,0 +1,47 @@
+BackendBundle\Entity\Lineapack:
+    type: entity
+    table: lineapack
+    indexes:
+        fk_lineapack_pack1_idx:
+            columns:
+                - pack_id
+        fk_lineapack_producto1_idx:
+            columns:
+                - producto_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cantidad:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+    manyToOne:
+        pack:
+            targetEntity: Pack
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                pack_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        producto:
+            targetEntity: Producto
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                producto_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
